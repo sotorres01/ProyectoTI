@@ -182,8 +182,9 @@ resource "local_file" "ansible_inventory" {
 }
 
 resource "null_resource" "run_ansible" {
-  depends_on = [azurerm_linux_virtual_machine.utb_vm],[azurerm_postgresql_server.postgres_server],[azurerm_postgresql_firewall_rule.postgres_firewall]
-
+  depends_on = [azurerm_linux_virtual_machine.utb_vm]
+  depends_on = [azurerm_postgresql_server.postgres_server]
+  depends_on = [azurerm_postgresql_firewall_rule.postgres_firewall]
   provisioner "local-exec" {
     command = "sleep 30 && ansible-playbook -i ${local_file.ansible_inventory.filename} --private-key ${local_sensitive_file.private_key.filename} backend.yaml"
   }
