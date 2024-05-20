@@ -16,14 +16,14 @@
     - name: Descargar imagen Docker desde Docker Hub
       become: true
       docker_image:
-        name: sofiat2024/backendactu
+        name: sofiat2024/backendactu:latest
         source: pull
 
     - name: Ejecutar contenedor Docker
       become: true
       docker_container:
         name: backend
-        image: sofiat2024/backendactu
+        image: sofiat2024/backendactu:latest
         state: started
         ports:
           - 80:80
