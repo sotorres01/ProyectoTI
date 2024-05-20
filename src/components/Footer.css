@@ -1,0 +1,13 @@
+.footer {
+    width: 100%;
+    background-color: #fff;
+    border-top: 0.0625rem solid #eaeaea;
+    text-align: start;
+    padding: 1.2rem 0 1.2rem 0;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.span-footer {
+    margin-left: 1rem;
+}

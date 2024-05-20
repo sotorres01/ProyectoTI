@@ -1,0 +1,130 @@
+/* AddItem.css */
+.popup-content {
+  background-color: #fff;
+  padding: 2vw;
+  width: 40vw;
+  height: 30vw;
+  margin: 3vw auto;
+  border: 2px solid #000;
+  border-radius: 0.7vw;
+  overflow: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+.popup-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 !important;
+}
+
+
+.faTimes {
+  cursor: pointer;
+  color: #000;
+  font-size: 1.5rem;
+  background: none;
+}
+
+.popup-form-child {
+  margin: 0 0 1.5rem 0;
+}
+
+.popup-form > label {
+  margin: 0;
+  padding-bottom: 0.5rem;
+}
+
+.popup-form > input {
+  outline: none;
+  border: var(--border-input);
+  height: 1.5rem;
+}
+
+.popup-form > :nth-child(14) {
+}
+
+.button-form-add-item {
+  border: none;
+  padding: 0.625rem 1.5625rem;
+  color: #fff;
+  background: var(--login-signup-button);
+  border-radius: 1.875rem;
+  font-size: 1.1875rem;
+  font-weight: 700;
+  cursor: pointer;
+  width: 7rem;
+  margin-bottom: .7rem;
+}
+
+.button-form-add-item:active { 
+  transform: scale(0.9);
+}
+
+.submit-form-container { 
+  display: flex;
+  justify-content: center;
+}
+
+.close {
+  font-family: "Poppins";
+  border: none;
+  padding: 0.625rem 1.5625rem;
+  color: #fff;
+  background: #b00;
+  border-radius: 1.875rem;
+  font-size: 1.1875rem;
+  font-weight: 700;
+  cursor: pointer;
+  width: 7rem;
+}
+
+.close:active { 
+  transform: scale(0.9);
+}
+
+.add-button {
+  font-family: "Poppins", sans-serif;
+  border: none;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  width: 13.75vw; 
+  height: 3.6875vw; 
+  color: #f5f5f5;
+  background: #49e2a0;
+  border-radius: 3.125vw; 
+  font-size: 1.1875vw; 
+  font-weight: 700;
+  cursor: pointer;
+}
+
+
+.add-button:hover {
+  transition: all .2s ease;
+  transform: scale(1.1);
+}
+
+label { 
+  font-weight: normal;
+  font-size: large;
+}
+
+input { 
+  padding: .3rem 0 .3rem .5rem;
+}
+
+.flex-container {
+   display: flex;
+   justify-content: center;
+}
+
+.center-items { 
+  display: flex;
+  justify-content: center;
+}

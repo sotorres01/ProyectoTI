@@ -1,0 +1,141 @@
+.main-content-buy-product > h1 {
+  text-align: center;
+}
+
+.section-1-buy-product {
+  background: transparent;
+  width: 100%;
+  height: auto;
+}
+
+.section-buy-product-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.section-buy-product-div-specification-content-1 {
+  background: #fff;
+  width: 25vw;
+  min-height: 32.423125vw;
+  padding: 1.5vw 1.5vw 1.5vw 1.5vw;
+  margin: 3vw 0 3vw 0;
+  outline: .09vw solid #eaeaea;
+  height: auto;
+}
+
+
+.buy-product-main-img-container {
+  margin-top: 1vw;
+  width: auto;
+}
+
+.buy-product-main-img-container > img {
+  width: 100%;
+  border-radius: 0.25vw;
+}
+
+.section-buy-product-div-specification-content-2 {
+  margin: 3vw 0 3vw 0;
+  padding: 1.5vw 1vw 1.5vw 1.5vw;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 40.0625vw;
+  min-height: 32.423125vw;
+  gap: 1.5vw;
+  outline: .09vw solid #eaeaea;
+  height: auto;
+}
+
+.buy-product-name { 
+  font-size: 2vw;
+  margin: 0;
+}
+
+
+.section-buy-product-div-specification-content-2 > .buy-product-price {
+  font-size: 2vw;
+  margin: 0;
+}
+.section-buy-product-div-specification-content-2 > span {
+  font-size: 1.5vw;
+}
+
+.paragraph-buy-product-content-2 {
+  line-height: 1.6vw;
+  margin: 0;
+}
+
+.paragraph-buy-product-content-2{
+  font-size: 1.5vw;
+}
+
+.select-quantity-buy-product{
+  width: 2.5vw;
+  height: 2.5vw;
+}
+
+.Quantity-buy-product-content{
+  font-size: 1.5vw;
+}
+
+
+.buy-product-stars {
+  display: flex;
+  flex-direction: row;
+}
+
+.buy-product-stars > :nth-child(-n + 4) {
+  color: #ff0;
+}
+
+
+.bold-text {
+  font-weight: bold;
+}
+
+.buy-product-submit-button {
+  font-size: 1.25vw;
+  padding: 0.5vw 1vw;
+  border-radius: 0.3vw;
+  border: .08vw solid #7db2f3;
+  background-color: #7db2f3;
+  border-color: #7db2f3;
+  width: 18.15625vw;
+  color: #fff;
+  margin-right: 1vw;
+  cursor: pointer;
+  transition: background .25s;
+  
+}
+
+.buy-product-submit-button:hover { 
+  background: #fff;
+  color: #7db2f3;
+  border: .08vw solid #7db2f3;
+}
+
+.buy-product-submit-button:active {
+  transform: scale(0.9);
+}
+
+.form-buy-product {
+  display: flex;
+  flex-direction: row;
+}
+
+.section-2-buy-product {
+  height: 20vw;
+  background: rgb(40, 41, 40);
+}
+
+.Quantity-buy-product-content { 
+  display: flex;
+  gap: 1vw;
+}
+
+.Quantity-buy-product-content > :nth-child(2){
+  width: 3vw;
+  text-align: start;
+}

@@ -1,0 +1,19 @@
+.update-button-inventory { 
+    background-color: rgb(128, 0, 128, .8);
+    color: white;
+    padding: 0.5vw 1vw;
+    border: none;
+    border-radius: 0.5vw;
+    cursor: pointer;
+    width: 5.5vw;
+    font-size: 0.7vw;
+    transition: transform .1s;
+  }
+  
+  .update-button-inventory:hover{ 
+    transform: scale(1.1);
+  }
+  
+  .update-button-inventory:active { 
+    transform: scale(0.9);
+  }

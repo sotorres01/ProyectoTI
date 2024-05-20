@@ -1,0 +1,146 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-home {
+  margin-top: 1.25vw; 
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.25vw; 
+  width: 85%;
+  position: relative;
+}
+
+.text-container {
+  width: 50%;
+}
+
+.publicity-img { 
+  position: inherit;
+  top: 3.5vw;
+  left: 5.5vw;
+  width: 43%;
+}
+
+.last-day-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.last-day-container-items {
+  margin: 0 1.25vw; 
+}
+
+.last-days {
+  font-size: 2.5vw; 
+  margin: auto;
+  font-weight: 900;
+}
+
+.prod {
+  color: #2136f5;
+  font-family: "Inter", Helvetica;
+  font-size: 4vw; 
+  font-weight: 800;
+  width: 33.4375vw; 
+  margin-bottom: 0;
+  margin-top: 0;
+  white-space: nowrap;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.selected-products {
+  color: #000000;
+  font-family: "Inter", Helvetica;
+  font-size: 2.1875vw; 
+  font-style: italic;
+  font-weight: 600;
+  top: 2.1875vw; 
+  width: 32.8vw; 
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  white-space: nowrap; 
+  
+}
+
+.shop-now {
+  background: #000; 
+  font-family: "Inter", Helvetica;
+  color: #fff;
+  padding: 0.8125vw; 
+  width: auto; 
+  font-size: 3.4375vw; 
+  cursor: pointer;
+  border-radius: 0.5625vw; 
+  font-weight: 800;
+  display: inline-block; 
+  margin-right: 37.75vw; 
+  text-decoration: none;
+  border: 0.1875vw solid #000;
+  transition: transform .3s ease;
+}
+
+.shop-now:hover { 
+  transform: scale(1.1);
+}
+
+.shop-now:active { 
+  transform: scale(0.9);
+}
+
+.section {
+  background-color: #fff;
+  width: 100vw;
+  margin-top: 2.5vw; 
+  padding-top: 3.125vw; 
+  padding-bottom: 3.125vw; 
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  height: 13.375vw; 
+}
+
+.shop-by-category {
+  margin-top: 0;
+  padding-bottom: 0.625vw; 
+  font-size: 2.5vw;
+}
+
+.product-category-home-container { 
+  display: flex;
+  gap: 1.5vw;
+  justify-content: center;
+}
+
+.product-category-home {
+  padding: 1vw;
+  text-decoration: none;
+  background: #abc7f3;
+  color: #212527;
+  border-radius: 0.625vw;
+  border: 0.18vw solid #abc7f3;
+  transition: transform 0.3s ease;
+  font-size: 1.2vw;
+}
+
+.product-category-home:hover { 
+  transform: scale(1.1vw); 
+}
+
+.product-category-home:active { 
+  transform: scale(0.9);
+}
+.text {
+  font-size: 1vw;
+}
+
+

@@ -1,0 +1,226 @@
+.shopping-cart-content {
+  display: grid;
+  grid-template-columns: auto auto;
+  background: rgba(167, 194, 252, 0.915);
+  width: 100%;
+  min-height: 110vh;
+  position: relative;
+}
+
+.shopping-cart-main-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1vw;
+  flex-direction: column;
+  min-height: 110vw;
+  height: auto;
+  background: #fff;
+  padding: 1.5vw;
+}
+
+.shopping-cart-main-content > h2 {
+  font-size: 3vw;
+  color: #212521;
+  margin: 0;
+  font-weight: 400;
+}
+
+.shopping-cart-item {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff ;
+  width: 100%;
+  height: auto;
+  margin-right: 1vw;
+  border: 0.15vw solid  rgba(167, 194, 252, 0.915);
+}
+
+.img-shopping-front-item {
+  max-width: 10vw;
+  height: auto;
+  object-fit: cover;
+}
+
+.img-shopping-front-item-container {
+  padding: 1vw;
+  display: inline-block;
+}
+
+.description-container-shoppping-front {
+  padding: 1vw 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.description-container-shoppping-front > :first-child {
+  font-size: 1.5vw;
+}
+.description-container-shoppping-front > span {
+  font-size: 1.2vw;
+}
+
+.button-delete-shopping-cart-front {
+  width: 12vw;
+  font-size: 1.3vw;
+}
+
+.description-container-shoppping-front > :nth-child(-n + 4) {
+  font-weight: light;
+}
+
+.shopping-cart-aside {
+  background: rgba(167, 194, 252, 0.915);
+  border-left: 0.08vw solid #eaeaea;
+  display: flex;
+  flex-direction: column;
+  padding: 3vw;
+  width: 9vw;
+  align-self: right;
+}
+
+.to-pay-shopping-cart-front {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.to-pay-shopping-cart-front > h1 {
+  font-weight: 1000;
+ 
+}
+
+.to-pay-shopping-cart-front > h2 {
+  margin: 0;
+  margin-top: 2vw;
+  width: max-content;
+  font-weight: 300;
+  font-size: 1.7vw;
+}
+
+.to-pay-shopping-cart-front > span {
+  width: max-content;
+  align-self: flex-end;
+  font-size: 1.7vw;
+}
+
+.title-aside-shopping-front {
+  font-size: 2vw;
+  color: #212521;
+  margin: 0;
+  font-weight: 400;
+}
+
+/*.div-form-shopping-cart-front {
+    
+}*/
+
+.text-align-start {
+  font-size: 2.3vw;
+  margin-top: 5vw;
+  margin-bottom: 0vw;
+}
+
+.label-shopping-cart-front{
+
+  font-size: 1.3vw;
+}
+
+.form-shopping-cart-front {
+  display: flex;
+  margin-top: 0.7vw;
+  flex-direction: column;
+  gap: 0.7vw;
+}
+
+.form-shopping-cart-front > input {
+  width: 95%;
+  background: #fff;
+  border: 0.0625vw solid #eaeaea;
+  font-size: 1vw;
+  margin-top: 0vw;
+}
+
+/*.button-shopping-cart-front-1 {
+  width: 98%;
+  align-self: center;
+  height: 3rem;
+  background: #fbb;
+  border: none;
+  border-radius: 0.3rem;
+  color: #110a0a;
+  font-size: 1.2rem;
+  font-weight: 400;
+  cursor: pointer;
+ 
+}*/
+
+.button-pay-aside-shopping-cart-front { 
+  padding: 0;
+  align-self: center;
+  height: 3rem;
+  background: rgb(127, 233, 178);
+  border: none;
+  border-radius: 0.3rem;
+  color: #110a0a;
+  font-size: 1.2rem;
+  font-weight: 400;
+  cursor: pointer;
+  width: 50%;
+  margin: 0.7rem 0 0 0;
+}
+
+.button-pay-aside-shopping-cart-front:active {
+  transform: scale(0.9);
+  transition: transform 0.2s;
+}
+
+.shopping-cart-aside > h1 {
+  position: fixed;
+  align-self: center;
+  align-items: center;
+  margin-left: 28vw;
+  font-weight: 900;
+}
+
+.to-pay-shopping-cart-front{
+  position: fixed;
+  margin-top: 2.5vw;
+}
+
+.div-form-shopping-cart-front {
+  position: fixed;
+  margin-right: 4vw;
+  margin-top: 5.5vw;
+}
+
+.pay-announcement { 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #f5f5f5;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1em;
+  border: 0.0625rem solid #000;
+}
+
+.close-pay-announcement { 
+  padding: 0;
+  align-self: center;
+  height: 3rem;
+  background: #a00;
+  border: none;
+  border-radius: 0.3rem;
+  color: #110a0a;
+  font-size: 1.2rem;
+  font-weight: 400;
+  cursor: pointer;
+  min-width: 10em;
+  margin: 0.7rem 0 0 0;
+  color: #fff;
+}
