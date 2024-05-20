@@ -19,8 +19,8 @@ provider "azurerm" {
 
 resource "azurerm_network_security_group" "nsg_utb_front_1" {
   name                = "nsg_utb_front_1"
-  location            = azurerm_resource_group.rg.location
-  resource_group_name = azurerm_resource_group.rg.name
+  location            = azurerm_resource_group.location.eastus
+  resource_group_name = azurerm_resource_group.name.utb_proyectoEC
 
   security_rule {
     name                       = "allowSSH"
@@ -61,16 +61,16 @@ resource "azurerm_network_security_group" "nsg_utb_front_1" {
 
 resource "azurerm_public_ip" "public_ip_front1" {
   name                = "vm_ip_front1"
-  location            = azurerm_resource_group.rg.location
-  resource_group_name = azurerm_resource_group.rg.name
+  location            = azurerm_resource_group.location.eastus
+  resource_group_name = azurerm_resource_group.name.utb_proyectoEC
   allocation_method   = "Static"
   domain_name_label   = "front1ec"
 }
 
 resource "azurerm_network_interface" "vm_nic_front1" {
   name                = "vm_nic_front1"
-  location            = azurerm_resource_group.rg.location
-  resource_group_name = azurerm_resource_group.rg.name
+  location            = azurerm_resource_group.location.eastus
+  resource_group_name = azurerm_resource_group.name.utb_proyectoEC
 
   ip_configuration {
     name                          = "ipconfig_nic_front1"
@@ -98,8 +98,8 @@ resource "local_sensitive_file" "private_key" {
 
 resource "azurerm_linux_virtual_machine" "utb_vm_front1" {
   name                  = "frontend1_vm"
-  location              = azurerm_resource_group.rg.location
-  resource_group_name   = azurerm_resource_group.rg.name
+  location              = azurerm_resource_group.location.eastus
+  resource_group_name   = azurerm_resource_group.name.utb_proyectoEC
   network_interface_ids = [azurerm_network_interface.vm_nic_front1.id]
   size                  = "Standard_DS1_v2"
 
