@@ -1,7 +1,7 @@
 resource "azurerm_network_security_group" "nsg_utb_front_2" {
   name                = "nsg_utb_front_2"
-  location            = azurerm_resource_group.location.eastus
-  resource_group_name = azurerm_resource_group.name.utb_proyectoEC
+  location            = "eastus"
+  resource_group_name = "utb_proyectoEC"
 
   security_rule {
     name                       = "allowSSH"
@@ -42,16 +42,16 @@ resource "azurerm_network_security_group" "nsg_utb_front_2" {
 
 resource "azurerm_public_ip" "public_ip_front2" {
   name                = "vm_ip_front2"
-  location            = azurerm_resource_group.location.eastus
-  resource_group_name = azurerm_resource_group.name.utb_proyectoEC
+  location            = "eastus"
+  resource_group_name = "utb_proyectoEC"
   allocation_method   = "Static"
   domain_name_label   = "front2ec"
 }
 
 resource "azurerm_network_interface" "vm_nic_front2" {
   name                = "vm_nic_front2"
-  location            = azurerm_resource_group.location.eastus
-  resource_group_name = azurerm_resource_group.name.utb_proyectoEC
+  location            = "eastus"
+  resource_group_name = "utb_proyectoEC"
 
   ip_configuration {
     name                          = "ipconfig_nic_front2"
@@ -68,8 +68,8 @@ resource "azurerm_network_interface_security_group_association" "nsg_nic_assoc_f
 
 resource "azurerm_linux_virtual_machine" "utb_vm_front2" {
   name                  = "frontend2_vm"
-  location              = azurerm_resource_group.location.eastus
-  resource_group_name   = azurerm_resource_group.name.utb_proyectoEC
+  location              = "eastus"
+  resource_group_name   = "utb_proyectoEC"
   network_interface_ids = [azurerm_network_interface.vm_nic_front2.id]
   size                  = "Standard_DS1_v2"
 
