@@ -18,14 +18,14 @@ jobs:
       id: date
       run: echo "date=$(TZ=':America/Bogota' date +'%Y-%m-%dT%H-%M-%S')" >> $GITHUB_OUTPUT
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag sofiat2024/backendactu:latest
+      run: docker build . --file Dockerfile --tag sofiat2024/backendactu
     - name: Login to Dockerhub
       uses: docker/login-action@v3
       with:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
     - name: Push the Docker image to Dockerhub
-      run: docker push sofiat2024/backendactu:latest
+      run: docker push sofiat2024/backendactu
       
  deployapp:
       runs-on: ubuntu-latest
