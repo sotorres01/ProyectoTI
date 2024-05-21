@@ -12,26 +12,13 @@
       pip: 
         name: docker
        
-
-    - name: Descargar imagen Docker desde Docker Hub
+    - name: Descargar imagen Docker desde Docker Hub usando shell
       become: true
-      docker_image:
-        name: sofiat2024/backendactu
-        source: pull
+      shell: docker pull sofiat2024/backendec
 
-    - name: Ejecutar contenedor Docker
+    - name: Ejecutar contenedor Docker con comando docker run
       become: true
-      docker_container:
-        name: backend
-        image: sofiat2024/backendactu
-        state: started
-        ports:
-          - 80:80
-        env:
-          POSTGRES_HOST: "dpg-cp56ct8cmk4c73ethb10-a.oregon-postgres.render.com"
-          POSTGRES_PORT: "5432"
-          POSTGRES_DB: "ecommerce_34gi_ijxt"
-          POSTGRES_USER: "ecommerce_34gi_user"
-          POSTGRES_PASSWORD: "JJ8L8yEBbH5Cu4BixOJHkgwRN4kZ4jro"
+      command: docker run --name backend -d -p 80:80 -e POSTGRES_HOST=dpg-cp56ct8cmk4c73ethb10-a.oregon-postgres.render.com -e POSTGRES_PORT=5432 -e POSTGRES_DB=ecommerce_34gi_ijxt -e POSTGRES_USER=ecommerce_34gi_user -e POSTGRES_PASSWORD=JJ8L8yEBbH5Cu4BixOJHkgwRN4kZ4jro sofiat2024/backendec
+
         
 
